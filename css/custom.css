@@ -1,0 +1,280 @@
+/*///////////////////////////////////////
+Select all///////////////////////////////
+///////////////////////////////////////*/
+
+*{
+	border: solid 0px black;
+	margin: 0px;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/*///////////////////////////////////////
+easteregg.html///////////////////////////
+///////////////////////////////////////*/
+
+#catyogaball{
+	border: solid 20px rgb(123,180,85);
+	outline: solid 20px rgb(211,147,50);
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    position: absolute;
+    top: 37%;
+    left: 25%;
+    height: 400px;
+    margin-bottom: 110px;
+}
+
+/*///////////////////////////////////////
+Link Styling ////////////////////////////
+///////////////////////////////////////*/
+
+a:link {
+	color: #3D7CA6;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #3D7CA6;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #54ABE6;
+}
+
+/*///////////////////////////////////////
+index.html///////////////////////////////
+///////////////////////////////////////*/
+
+body{
+	background-color: #FAFFFF;
+	width: 100%;
+	height: 100%;
+}
+
+#skimMilk{
+	background-color: #254C66;
+	height: 2px;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 0px;
+}
+
+#cream{
+	background-color: #3D7CA6;
+	height:4px;
+	width: 100%;
+	padding-left: 5px;
+}
+
+#socialBar{
+	background-color: #54ABE6;
+	height: 40px;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 15px;
+	border-bottom: solid 2px #FFFFFF;
+}
+
+#signUp{
+	position: absolute;
+	right: 95px;
+	top: 22px;
+	border: solid 0px red;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	color: #FAFAFA;
+}
+
+.btn{
+	position: absolute;
+	background: #3D7CA6;
+	border-radius: 5px;
+	height: 20px;
+	width: 60px;
+	font-size: 12pt;
+	padding-bottom: 25px;
+	right: 20px;
+	top: 18px;
+	color: #FAFAFA;
+	border: none;
+}
+
+#logo{
+	border: solid 0px red;
+	height: 100px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#logoText{
+	position: absolute;
+	right: 41%;
+	top: 100px;
+	border: solid 0px red;
+	height: 20px;
+	width: 60px;
+	font-size: 30pt;
+	text-align: center;
+	color: #54ABE6;
+}
+
+#navBar{
+	height:50px;
+	width:100%;
+	background:rgba(61,124,166, .2);
+	border-top:solid 2px #FFFFFF;
+	border-bottom:solid 1px #FFFFFF;
+	padding-top: 25px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 25%;
+	float: left;
+	font-weight: bold;
+	font-size:16pt;
+}
+
+#curds{
+	background-color: #3D7CA6;
+	height: 8px;
+	width: 100%;
+	padding-left: 5px;
+	border-bottom: solid 1px #FAFAFA;
+}
+
+#content{
+	height: 362px;
+}
+
+#studio{
+	position: relative;
+	left: 21%;
+}
+
+.btn1{
+	position: absolute;
+	background: rgba(61, 124, 166, .8);
+	border-radius: 5px;
+	height: 40px;
+	width: 120px;
+	font-size: 12pt;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	left: 380px;
+	top: 550px;
+	color: #FAFAFA;
+	border: none;
+}
+
+#options{
+	height: 80px;
+	border: solid 0px black;
+	padding: 0px;
+}
+
+.contentOptions{
+	background-color: #3D7CA6;
+	border: solid 2px #FAFAFA;
+	height: 48px;
+	width: 270.5px;
+	position: relative;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 25px;
+	left: 300px;
+	color: #FAFAFA;
+	font-size: 14pt;
+}
+
+#skimButter{
+	background-color: #254CFF;
+	height: 2px;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 0px;
+	bottom: 36px;
+	position: fixed;
+}
+
+#butter{
+	background-color: #54ABE6;
+	position: fixed;
+	bottom: 0px;
+	height: 16px;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 10pt;
+	color: #FAFAFA;
+}
+
+#butter1{
+	color: #FAFAFA;
+	position: absolute;
+	left: 5px;
+	bottom: 2px;
+	padding-left: 6px;
+	padding-bottom: 4px;
+}
+
+
+#butter2{
+	color: #FAFAFA;
+	position: absolute;
+	right: 20px;
+	bottom: 2px;
+	padding-bottom: 4px;
+}
+
+#butter3{
+	color: #FAFAFA;
+	position: absolute;
+	right: 78px;
+	bottom: 2px;
+	padding-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
