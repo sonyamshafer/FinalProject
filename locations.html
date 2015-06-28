@@ -2,10 +2,12 @@
 <html>
 
 <head>
-	<title>locations</title>
+	<title>Locations</title>
 	<link rel="stylesheet" href="css/custom.css"/>
 	<link rel="shortcut icon" href="images/icon.png"/>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
 </head>
 
 <body>
@@ -37,10 +39,10 @@ Beginning social and navbar ////////////////
 
 		<nav id="navBar">
 			<ul id="fixedNav">
-				<li><a href="index.html" target="_blank">HOME</a></li>
-				<li><a href="locations.html" target="_blank">LOCATIONS</a></li>
-				<li><a href="classes.html" target="_blank">CLASSES</a>
-				<li><a href="getstarted.html" target="_blank">GET STARTED</a>	
+				<li><a href="index.html" class="navOptions" target="_blank">HOME</a></li>
+				<li><a href="locations.html" class="navOptions" target="_blank">LOCATIONS</a></li>
+				<li><a href="classes.html" class="navOptions" target="_blank">CLASSES</a>
+				<li><a href="getstarted.html" class="navOptions" target="_blank">GET STARTED</a>	
 			</ul>
 		</nav>
 
@@ -49,37 +51,57 @@ Beginning social and navbar ////////////////
 <!-- ///////////////////////////////////////
 Ending social and navbar ///////////////////
 /////////////////////////////////////// -->
-
-
-	<div id="screenWidth">
-		
-		<div id="mainDiv">
-			
-		</div>
-
-		<div id="titleDiv"><p>DIV to hold title</p></div>
-
-
-
-
-	<div id="cityTab">
-		<!-- create an unordered list  -->
-		<ul>
-			<li><a href="#" id="onLink">NY</a></li>
-			<li><a href="#" id="onLink">LA</a></li>
-			<li><a href="#" id="onLink">SF</a></li>
-			<li><a href="#" id="onLink">CH</a></li>
-		</ul>	
-	</div> <!-- closes cityTab div  -->
-	<div id="holdMap">
-		<img src="img/img_map1.png" class="icon" alt="">
+	
+	<div id="titleDiv">
+		<h1>Locations</h1>
+		<p>	Namaste has 14 yoga studio locations in New York, California and Chicago. You can find contact information and addresses for all of our locations below.</p>
 	</div>
+
+	<div id="optionsClass">
+		<div class="contentOptionsClass Class11">BROOKLYN</div>
+		<div class="contentOptionsClass Class22">LOS ANGELES</div>
+		<div class="contentOptionsClass Class33">SAN FRANCISCO</div>
+		<div class="contentOptionsClass Class44">CHICAGO</div>	
+	</div>	
+
+	<div class="map">
+		<img src="images/brooklyn.png" class="map Brooklyn" alt="">
+		<img src="images/losangeles.png" class="map LA" alt="">
+		<img src="images/sanfran.png" class="map SanFran" alt="">
+		<img src="images/chicago.png" class="map Chicago" alt="">
+	</div>
+
+</div>	<!-- closes container -->
+
+<script>
+	 	$('.Brooklyn').show();
+	 	$('.LA').hide();
+	 	$('.SanFran').hide();
+	 	$('.Chicago').hide();
+
+	 	$('.Class11').click(function() {
+	 	$('.Brooklyn').fadeIn();
+	 	});
+		
+	 	$('.Class22').click(function() {
+	 	$('.LA').fadeIn();
+	 	});
+
+	 	$('.Class33').click(function() {
+	 	$('.SanFran').fadeIn();
+	 	});
+
+	 	$('.Class44').click(function() {
+	 	$('.Chicago').fadeIn();
+	 	});
+
+	</script>	
 
 <!-- ///////////////////////////////////////
 Bottom bar /////////////////////////////////
 //////////////////////////////////////// -->		
 
-		<div id="skimButter"></div>
+	<div id="skimButter"></div>
 
 		<div id="butter">
 			<p id="butter1">namaste&copy;</p>
