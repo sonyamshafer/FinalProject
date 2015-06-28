@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Animate navigation buttons to look cute-sy when you hover and when user clicks -->
-	<title>namaste</title>
 
-	<!--linking to custom stylesheet -->
+<head>
+	<title>namaste</title>
 	<link rel="stylesheet" href="css/custom.css"/>
-	<link rel="shortcut icon" href="images/icon.ico"/>
+	<link rel="shortcut icon" href="images/icon.png"/>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
 </head>
 
 <body>
+
+<!-- ///////////////////////////////////////
+Beginning social and navbar ////////////////
+/////////////////////////////////////// -->
+
 	<div id="container">
 		<div id="skimMilk"></div>
 
 		<div id="cream"></div>	
 
 		<div id="socialBar">
-			<a href="http://www.facebook.com"><img src="images/icons/24/Facebook.png"></a>
-			<a href="http://www.twitter.com"><img src="images/icons/24/Twitter.png"></a>
-			<a href="http://www.instagram.com"><img src="images/icons/24/Instagram.png"></a>
-			<a href="http://www.pinterest.com"><img src="images/icons/24/Pinterest.png"></a>
-			<a href="http://www.youtube.com"><img src="images/icons/24/Youtube.png"></a>
-			<a href="easteregg.html" target="_blank"><img src="images/icons/24/Github.png"></a>
-			<p id="signUp">sign up</p>
+				<a href="http://www.facebook.com"><img src="images/icons/24/Facebook.png"></a>
+				<a href="http://www.twitter.com"><img src="images/icons/24/Twitter.png"></a>
+				<a href="http://www.instagram.com"><img src="images/icons/24/Instagram.png"></a>
+				<a href="http://www.pinterest.com"><img src="images/icons/24/Pinterest.png"></a>
+				<a href="http://www.youtube.com"><img src="images/icons/24/Youtube.png"></a>
+				<a href="easteregg.html" target="_blank"><img src="images/icons/24/Github.png"></a>
+			
+<!--///////////////////////////////////////
+Lightbox ////////////////////////////////
+/////////////////////////////////////-->
+
+			<a href="javascript:lightbox('Do I have to use Bootstrap to get all the fields in here?');" id="signUp">sign up</a>
+
+<!--///////////////////////////////////////
+Lightbox ////////////////////////////////
+/////////////////////////////////////-->			
+
+			<!-- <p id="signUp">sign up</p> -->
+			
 			<button class="btn">sign in</button>
 		</div>
-		
+
+<!-- ///////////////////////////////////////
+End social bar ////////////////////////////
+/////////////////////////////////////// -->
+	
 		<div id="logoBar">
 			<a href="index.html"><img src="images/logo.png" id="logo"></a>
 			<p id="logoText">namaste&copy;</p>
-		</div>
+		</div>	
 
 		<nav id="navBar">
 			<ul id="fixedNav">
-				<li><a href="index.html" target="_blank">HOME</a></li>
-				<li><a href="locations.html" target="_blank">LOCATIONS</a></li>
-				<li><a href="classes.html" target="_blank">CLASSES</a>
-				<li><a href="getstarted.html" target="_blank">GET STARTED</a>	
+				<li><a href="index.html" class="navOptions" target="_blank">HOME</a></li>
+				<li><a href="locations.html" class="navOptions" target="_blank">LOCATIONS</a></li>
+				<li><a href="classes.html" class="navOptions" target="_blank">CLASSES</a>
+				<li><a href="getstarted.html" class="navOptions" target="_blank">GET STARTED</a>	
 			</ul>
 		</nav>
 
 		<div id="curds"></div>
 
+<!-- ///////////////////////////////////////
+Ending social and navbar ///////////////////
+//////////////////////////////////////// -->
+
 		<div id="content">
 			<img src="images/studio.jpg" id="studio">
+
+			<a href="classes.html" target="_blank">
 			<button class="btn1">LEARN MORE</button>
+			</a>			
 		</div>
 
-		<div id="options">
-			<a href="index.html"><div class="contentOptions">ONE WEEK FREE</div></a>
-			<a href="index.html"><div class="contentOptions">MEET OUR TEACHERS</div></a>
-			<a href="index.html"><div class="contentOptions">FIND YOUR STUDIO</div></a>
+		<div id="imageBar">
+			<div id="options">
+				<div><a href="index.html" class="contentOptions">ONE WEEK FREE</a></div>
+				<div><a href="index.html" class="contentOptions">MEET OUR TEACHERS</a></div>
+				<div><a href="index.html" class="contentOptions">FIND YOUR STUDIO</a></div>
+			</div>	
 		</div>	
+
+<!-- ///////////////////////////////////////
+Bottom bar /////////////////////////////////
+//////////////////////////////////////// -->		
 
 		<div id="skimButter"></div>
 

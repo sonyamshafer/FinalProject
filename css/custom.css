@@ -27,31 +27,88 @@ easteregg.html///////////////////////////
 }
 
 /*///////////////////////////////////////
+Lightbox ////////////////////////////////
+///////////////////////////////////////*/
+
+#lightbox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 200px;
+	margin-left: -250px;
+	background: #F1F1F1;
+	border-radius: 15px;
+	z-index: 1001;
+	display: none;
+}
+
+#lightbox-shadow {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #D3D3D3;
+	/*background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
+	opacity: 0.9;
+	z-index: 1000;
+	display: none;
+}
+
+/*///////////////////////////////////////
 Link Styling ////////////////////////////
 ///////////////////////////////////////*/
 
-a:link {
+.navOptions:link {
 	color: #3D7CA6;
 	text-decoration: none;
 }
 
-a:visited {
+.navOptions:visited {
 	color: #3D7CA6;
 	text-decoration: none;
 }
 
-a:hover {
+.navOptions:hover {
 	color: #54ABE6;
+	text-decoration: none;	
 }
+
+a:link{
+	text-decoration: none;
+}
+
+.contentOptions:link {
+	color: #54ABE6;
+	text-decoration: none;
+}
+
+.contentOptions:visited {
+	color: #54ABE6;
+	text-decoration: none;
+}
+
+.contentOptions:hover {
+	color: #FAFAFA;
+	background-color: rgba(8,50,64, .4);
+	text-decoration: none;	
+}
+
 
 /*///////////////////////////////////////
 index.html///////////////////////////////
 ///////////////////////////////////////*/
 
+html{
+	height: 100%;
+}
+
 body{
 	background-color: #FAFFFF;
 	width: 100%;
 	height: 100%;
+	overflow: scroll;
 }
 
 #skimMilk{
@@ -98,9 +155,15 @@ body{
 	font-size: 12pt;
 	padding-bottom: 25px;
 	right: 20px;
-	top: 18px;
+	top: 20px;
 	color: #FAFAFA;
 	border: none;
+}
+
+#logoBar{
+	border: solid 0px blue;
+	height: 108px;
+	width: 100%;
 }
 
 #logo{
@@ -116,12 +179,12 @@ body{
 
 #logoText{
 	position: absolute;
-	right: 41%;
-	top: 100px;
+	right: 41.5%;
+	top: 70px;
 	border: solid 0px red;
 	height: 20px;
 	width: 60px;
-	font-size: 30pt;
+	font-size: 18pt;
 	text-align: center;
 	color: #54ABE6;
 }
@@ -135,6 +198,7 @@ body{
 	padding-top: 25px;
 	padding-left: 2.5px;
 	padding-right: 2.5px;
+	display: block;
 }
 
 nav ul{
@@ -160,12 +224,10 @@ nav ul li{
 }
 
 #content{
-	height: 362px;
-}
-
-#studio{
-	position: relative;
-	left: 21%;
+	border: solid 0px red;
+	height: 360px;
+	width: 820px;
+	margin: 0 auto;
 }
 
 .btn1{
@@ -177,32 +239,55 @@ nav ul li{
 	font-size: 12pt;
 	padding-top: 10px;
 	padding-bottom: 25px;
-	left: 380px;
-	top: 550px;
+	left: 340px;
+	top: 560px;
 	color: #FAFAFA;
 	border: none;
 }
 
+.btn1:hover{
+	background: #083240;
+	cursor: hand;
+}
+
 #options{
 	height: 80px;
+	width: 826px;
 	border: solid 0px black;
 	padding: 0px;
+	color: #FAFAFA;
+	margin: 0 auto;
 }
 
 .contentOptions{
-	background-color: #3D7CA6;
+	background-color: rgba(61,124,166, .2);
 	border: solid 2px #FAFAFA;
-	height: 48px;
-	width: 270.5px;
+	border-radius: 5px;
 	position: relative;
 	float: left;
+	height: 50px;
+	width: 32.8%;
 	text-align: center;
 	vertical-align: middle;
 	padding-top: 25px;
-	left: 300px;
-	color: #FAFAFA;
-	font-size: 14pt;
+	font-size: 16pt;
+	font-weight: bold;
+	display: block;
 }
+
+nav ul li .contentOptions{
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	float: left;
+	font-weight: bold;
+	font-size:16pt;
+}
+
+/*///////////////////////////////////////
+Bottom bits and bobs/////////////////////
+///////////////////////////////////////*/
 
 #skimButter{
 	background-color: #254CFF;
@@ -212,6 +297,7 @@ nav ul li{
 	padding-top: 0px;
 	bottom: 36px;
 	position: fixed;
+	z-index: +100;
 }
 
 #butter{
@@ -225,15 +311,17 @@ nav ul li{
 	padding-bottom: 10px;
 	font-size: 10pt;
 	color: #FAFAFA;
+	z-index: +100;
 }
 
 #butter1{
 	color: #FAFAFA;
-	position: absolute;
+	position: fixed;
 	left: 5px;
 	bottom: 2px;
 	padding-left: 6px;
 	padding-bottom: 4px;
+	z-index: +100;
 }
 
 
@@ -243,6 +331,7 @@ nav ul li{
 	right: 20px;
 	bottom: 2px;
 	padding-bottom: 4px;
+	z-index: +100;
 }
 
 #butter3{
@@ -251,22 +340,197 @@ nav ul li{
 	right: 78px;
 	bottom: 2px;
 	padding-bottom: 4px;
+	z-index: +100;
+}
+
+/*///////////////////////////////////////
+classes.html/////////////////////////////
+///////////////////////////////////////*/
+
+#choiceBoxes{
+	border: solid 0px black;
+	height: 20px;
+	width: 825px;
+	margin: 0 auto;
+}
+
+.Boxes{
+	border: solid 2px #FAFAFA;
+	border-radius: 15px;
+	height: 20px;
+	width: 24.5%;
+	position: relative;
+	float: left;
+	display: block;
 }
 
 
+.Box1{
+	background: #1997BF;
+}
+
+.Box2{
+	background: #10657F;
+}
+
+.Box3{
+	background: #21CAFF;
+}
+
+.Box4{
+	background: #083240;
+}
 
 
+#optionsClasses{
+	height: 82px;
+	width: 825px;
+	border: solid 0px black;
+	padding: 0px;
+	color: #FAFAFA;
+	position: relative;
+	margin: 0 auto;
+}
+
+.contentOptionsClasses{
+	background-color: rgba(61,124,166, .2);
+	border: solid 2px #FAFAFA;
+	border-radius: 15px;
+	position: relative;
+	height: 50px;
+	width: 24.5%;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 25px;
+	font-size: 16pt;
+	font-weight: bold;
+	display: block;
+}
+
+.Class1{
+	position: relative;
+	top: 0px;
+	left: 0px;
+
+}
+
+.Class2{
+	position: absolute;
+	left: 206px;
+	top: 0px;
+}
+
+.Class3{
+	position: absolute;
+	left: 412px;
+	top: 0px;
+}
+
+.Class4{
+	position: absolute;
+	left: 618px;
+	top: 0px;
+}
+
+/*classes.html*/
+.contentOptionsClasses:link {
+	color: #54ABE6;
+	text-decoration: none;
+}
+
+.contentOptionsClasses:visited {
+	color: #54ABE6;
+	text-decoration: none;
+}
+
+.contentOptionsClasses:hover {
+	color: #FAFAFA;
+	background-color: rgba(8,50,64, .4);
+	text-decoration: none;	
+}
+
+.Boxes:hover{
+	background-color: #FAFAFA;
+}
+
+/*getstarted.html*/
+.classOptions:link {
+	color: #54ABE6;
+	text-decoration: none;
+}
+
+.classOptions:visited {
+	color: #54ABE6;
+	text-decoration: none;
+}
+
+.classOptions:hover {
+	color: #FAFAFA;
+	background-color: rgba(8,50,64, .4);
+	text-decoration: none;	
+}
+
+.Choices:hover{
+	background-color: #FAFAFA;
+}
+
+/*///////////////////////////////////////
+getstarted.html//////////////////////////
+///////////////////////////////////////*/
+
+#getStarted{
+	border: solid 0px black;
+	height: 300px;
+	width: 825px;
+	margin: 0 auto;
+}
+
+.Choices{
+	border: solid 2px #FAFAFA;
+	height: 358px;
+	width: 32.8%;
+	position: relative;
+	float: left;
+	display: block;
+}
 
 
+.Choice1{
+	background: #1997BF;
+}
 
+.Choice2{
+	background: #10657F;
+}
 
+.Choice3{
+	background: #21CAFF;
+}
 
+#startClasses{
+	height: 80px;
+	width: 825px;
+	border: solid 0px black;
+	padding: 0px;
+	color: #FAFAFA;
+	position: relative;
+	margin: 0 auto;
+}
 
-
-
-
-
-
+.classOptions{
+	background-color: rgba(61,124,166, .2);
+	border: solid 2px #FAFAFA;
+	position: relative;
+	float: left;
+	height: 50px;
+	width: 32.8%;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 25px;
+	font-size: 16pt;
+	font-weight: bold;
+	display: block;
+}
 
 
 
