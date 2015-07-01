@@ -67,9 +67,37 @@ function closeLightbox(){
 Lightbox End ////////////////////////////
 ///////////////////////////////////////*/
 
+/*///////////////////////////////////////
+Maps ////////////////////////////////////
+///////////////////////////////////////*/
 
+$('.Class11').click(function() {
+	$('.Brooklyn').fadeIn();
+	$('.SanFran').hide();
+	$('.Chicago').hide();
+	$('.LA').hide();
+});
 
+$('.Class22').click(function() {
+	$('.LA').fadeIn();
+	$('.Brooklyn').hide();
+	$('.SanFran').hide();
+	$('.Chicago').hide();
+});
 
+$('.Class33').click(function() {
+	$('.LA').hide();
+	$('.Brooklyn').hide();
+	$('.SanFran').fadeIn();
+	$('.Chicago').hide();
+});
+
+$('.Class44').click(function() {
+	$('.LA').hide();
+	$('.Brooklyn').hide();
+	$('.SanFran').hide();
+	$('.Chicago').fadeIn();
+});
 
 
 
