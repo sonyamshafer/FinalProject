@@ -3,10 +3,15 @@
 
 <head>
 	<title>Locations</title>
-	<link rel="stylesheet" href="css/custom.css"/>
+	<!-- <link rel="stylesheet" href="css/custom.css"/> -->
 	<link rel="shortcut icon" href="images/icon.png"/>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css" />
+	<!-- <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css" /> -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/custom.css" />
+	<meta name="viewport" content="initial-scale=1">
+
 </head>
 
 <body>
@@ -32,8 +37,10 @@ Beginning social and navbar ////////////////
 		</div>
 		
 		<div id="logoBar">
-			<a href="index.html"><img src="images/logo.png" id="logo"></a>
-			<p id="logoText">namaste&copy;</p>
+			<div id="logoContainer">
+				<a href="index.html"><img src="images/logo.png" id="logo"></a>
+				<p id="logoText">namaste&copy;</p>
+			</div>	
 		</div>
 
 		<nav id="navBar">
@@ -53,8 +60,17 @@ Ending social and navbar ///////////////////
 	
 	<div id="titleDiv">
 		<h1>Locations</h1>
-		<p>	Namaste has 14 yoga studio locations in New York, California and Chicago. You can find contact information and addresses for all of our locations below.</p>
+		<p>&nbsp</p>
+		<p>	Namaste has 10 yoga studio locations in New York, California and Chicago. You can find contact information and addresses for all of our locations to the right.</p>
+		<p>&nbsp</p>
+		<p>We opened our first studio in the heart of Brooklyn over 20 years ago. Since then, we've connected with many special yogis, and opened up studios in Chicago and California. We are looking forward to opening our newest in Tulum in 2016.</p>
+		<p>&nbsp</p>
+		<p>Namaste!</p>
+		<p>&nbsp</p>
+		<div id="underLine"></div>
 	</div>
+
+	
 
 	<div id="optionsClass">
 		<div class="contentOptionsClass Class11">BROOKLYN</div>
@@ -87,6 +103,7 @@ Bottom bar /////////////////////////////////
 	</div>
 
 	<script src="js/custom.js"></script>
+
 </body>
 </html>
 

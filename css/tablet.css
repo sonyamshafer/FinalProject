@@ -1,0 +1,76 @@
+*{
+	border:solid 1px black;
+}
+body{
+	background:orange;
+	padding:0px;
+	margin:0px;
+}
+
+.container{
+	width:768px;
+	margin:0 auto;
+}
+
+#banner{
+	height:75px;
+	padding-top:3%;
+	background:green;
+	font-size:30pt;
+	font-weight:bold;
+	color:orange;
+	text-align:center;
+}
+
+nav{}
+
+nav ul{
+	list-style: none;
+	padding:0px;
+	margin:0px;
+
+}
+
+nav ul li{
+	height:50px;
+	text-align:center;
+	padding-top:5%;
+	font-size:20pt;
+	border:dashed 0px black;
+	width:25%;
+	float:left;
+}
+
+nav ul li:hover{
+	background:white;
+}
+
+#mainContent{}
+
+#sidebar{
+	display:none;
+}
+
+#mainArea{
+	
+}
+
+#mainArea p{
+	padding:20px;
+	font-size:14pt;
+	text-align: justify;
+}
+
+#footer{
+
+	height:50px;
+	background:black;
+	font-size:10pt;
+	color:white;
+	text-align:center;
+	padding-top:10%;
+	font-family:verdana;
+}
+
+
+

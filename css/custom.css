@@ -188,7 +188,7 @@ body{
 
 #logoText{
 	position: absolute;
-	right: 41.5%;
+	right: 45%;
 	top: 70px;
 	border: solid 0px red;
 	height: 20px;
@@ -549,8 +549,8 @@ locations.html///////////////////////////
 	border: solid 0px purple;
 	position: relative;
 	left: 20px;
-	top: 7px;
-	width: 370px;
+	top: 57px;
+	width: 440px;
 	float: left;
 	
 }
@@ -560,7 +560,7 @@ locations.html///////////////////////////
 	width: 825px;
 	border: solid 0px black;
 	padding: 0px;
-	color: #FAFAFA;
+	color: #54ABE6;
 	position: relative;
 	left: 50px;
 	top: 18px;
@@ -572,9 +572,10 @@ locations.html///////////////////////////
 .map{
 	height: 395px;
 	position: absolute;
-	left: 156px;
-	top: 177px;
+	left: 257px;
+	top: 176px;
 	border: solid 0px grey;
+	z-index: 10;
 }
 
 #container{
@@ -583,7 +584,7 @@ locations.html///////////////////////////
 }
 
 .contentOptionsClass{
-	background-color: rgba(61,124,166, .4);
+	background-color: rgba(61,124,166, .2);
 	border: solid 2px #FAFAFA;
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
@@ -595,35 +596,47 @@ locations.html///////////////////////////
 	padding-top: 25px;
 	font-size: 16pt;
 	font-weight: bold;
-	z-index: 4;
 }
 
 .Class11{
 	position: relative;
 	top: 0px;
-	left: 7px;
-
+	left: 142px;
 }
 
 .Class22{
 	position: absolute;
-	left: 181px;
+	left: 316px;
 	top: 0px;
 }
 
 .Class33{
 	position: absolute;
-	left: 355px;
+	left: 490px;
 	top: 0px;
 }
 
 .Class44{
 	position: absolute;
-	left: 529px;
+	left: 664px;
 	top: 0px;
 }
 
+.contentOptionsClass:hover{
+	color: #FAFAFA;
+	background-color: rgba(8,50,64, .4);
+	text-decoration: none;	
+}
 
+p{
+	text-indent: 50px;
+}
 
-
-
+#underLine{
+	border: solid 1px #3D7CA6;
+	height: 0px;
+	width: 400px;
+	position: relative;
+	border-width: 2px;
+	left: 30px;
+}
