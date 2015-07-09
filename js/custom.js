@@ -21,6 +21,7 @@ function lightbox(insertContent, ajaxContentUrl){
 	// insert HTML content
 	if(insertContent != null){
 		$('#lightbox').append(insertContent);
+		$('#lightbox').append("hello");
 	}
 
 	// insert AJAX content
@@ -44,7 +45,7 @@ function lightbox(insertContent, ajaxContentUrl){
 	}
 
 	// move the lightbox to the current window top + 100px
-	$('#lightbox').css('top', $(window).scrollTop() + 100 + 'px');
+	$('#lightbox').css('top', $(window).scrollTop() + 250 + 'px');
 
 	// display the lightbox
 	$('#lightbox').show();
@@ -99,13 +100,35 @@ $('.Class44').click(function() {
 	$('.Chicago').fadeIn();
 });
 
+// declare a variable called slideImg to store the images which is in an array (list of items) //
+var slideImg =  ["images/studio.jpg", "images/studio2.jpg", "images/studio3.png", "images/studio4.png"];
 
+var Img_Number = 0; 
 
+// create a variable to store lenght of array. here i'm specifying the length to be 3//
+var Img_Len = 3;
 
+/*/////////////////////////////////////////////////////////
+/////this is the code for auto slider//////////////////////
+/////////////////////////////////////////////////////////*/
+function auto(){
+	setInterval(function(){
 
+		console.log(Img_Number)
+		if(Img_Number == 3){
+			Img_Number = 0;
+		
+		} else {
+			Img_Number++;
+		}
+		// document.slideshow.src = slideImg[Img_Number].src;
+		console.log( slideImg[Img_Number] )
 
+		$("#slideimg").attr('src', slideImg[Img_Number]);
+	}, 2500)
+}
 
-
+auto();
 
 
 
